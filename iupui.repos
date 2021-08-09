@@ -1,0 +1,13 @@
+repositories:
+  Tutorials:
+    type: git
+    url: git@github.com:wboler05/IUPUI_Tutorials.git
+    version: master
+  VAE:
+    type: git
+    url: https://github.com/daleas0120/VAE.git
+    version: main
+  python-docs-example:
+    type: git
+    url: git@github.com:wboler05/python-docs-example.git
+    version: master
