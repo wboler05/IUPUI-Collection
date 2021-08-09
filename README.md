@@ -19,7 +19,32 @@ pipenv install
 ```
 3. Execute repository imports using `vcs` from `vcstool`: 
 ```bash
-pipenv run vcs < iupui.repos
+# Make a directory to store imported repos
+mkdir src
+cd src
+# Import the available repos
+pipenv run vcs import < ../iupui.repos
+```
+
+An example output after running the import command:
+```
+$ pipenv run vcs import < ../iupui.repos 
+...
+=== ./Tutorials (git) ===
+Cloning into '.'...
+=== ./VAE (git) ===
+Cloning into '.'...
+=== ./python-docs-example (git) ===
+Cloning into '.'...
+```
+
+The resulting tree structure of this output:
+```
+.
+└── src
+    ├── python-docs-example
+    ├── Tutorials
+    └── VAE
 ```
 
 ## Access Issues
